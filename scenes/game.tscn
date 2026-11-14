@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d02r8aa3tqxtn" path="res://assets/Free/Terrain/Terrain (16x16).png" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://b5bluxx6ubfhh" path="res://scenes/alpfa_control.tscn" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://dr2ac4ok52fgv" path="res://scenes/citizen.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://blm1g7ud3rp7y" path="res://scenes/crop_take.tscn" id="5_iywne"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("1_uwrxv")
@@ -308,7 +309,20 @@ tile_map_data = PackedByteArray("AAADABEAAAAGAAAAAAADABIAAAAGAAEAAAADABMAAAAGAAI
 tile_set = SubResource("TileSet_bio7f")
 
 [node name="Player" parent="." unique_id=1215787855 instance=ExtResource("2_yqjtg")]
-position = Vector2(113, 341)
+position = Vector2(134, 345)
 
 [node name="Citizen" parent="." unique_id=1418606089 instance=ExtResource("3_lnu2h")]
-position = Vector2(196, 255)
+position = Vector2(193, 252)
+
+[node name="CropTake" parent="." unique_id=166416041 instance=ExtResource("5_iywne")]
+position = Vector2(636, 299)
+
+[node name="CropTake2" parent="." unique_id=1575263033 instance=ExtResource("5_iywne")]
+position = Vector2(553, 293)
+
+[node name="CropTake3" parent="." unique_id=628816334 instance=ExtResource("5_iywne")]
+position = Vector2(712, 293)
+
+[connection signal="body_entered" from="CropTake" to="." method="_on_crop_take_body_entered"]
+[connection signal="body_entered" from="CropTake2" to="." method="_on_crop_take_body_entered"]
+[connection signal="body_entered" from="CropTake3" to="." method="_on_crop_take_body_entered"]

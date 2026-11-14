@@ -4,7 +4,8 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 const GRAVITY = 980.0
-
+var pshenicha = 0
+var player_crops = 0
 @onready var anim = $AnimatedSprite2D
 
 var max_hp: int = 100
@@ -54,3 +55,12 @@ func _physics_process(delta: float) -> void:
 	
 
 	move_and_slide()
+
+func take() -> void:
+	player_crops += 1
+	
+func add_pshenicha() -> void:
+	pshenicha += 1
+
+func get_pshenicha() -> int:
+	return pshenicha
