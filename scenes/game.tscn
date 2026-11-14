@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://bc6wphukw4jd3"]
+[gd_scene format=4 uid="uid://d20ic1lis1vmo"]
 
 [ext_resource type="Script" uid="uid://b5gyowt7elduw" path="res://scripts/game.gd" id="1_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://d02r8aa3tqxtn" path="res://assets/Free/Terrain/Terrain (16x16).png" id="1_uwrxv"]
