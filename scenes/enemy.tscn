@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cqfr0bkw400nu"]
+
+[ext_resource type="Texture2D" uid="uid://dfbk2wtm65gsy" path="res://assets/enemies/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 01.png" id="1_ipns3"]
+[ext_resource type="Texture2D" uid="uid://dprbe32afqdp4" path="res://assets/enemies/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 02.png" id="2_8qclf"]
+[ext_resource type="Texture2D" uid="uid://cof7h1jb0nl5h" path="res://assets/enemies/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 03.png" id="3_w8i8w"]
+[ext_resource type="Texture2D" uid="uid://bnbn1qea3jmw" path="res://assets/enemies/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 04.png" id="4_otmr2"]
+[ext_resource type="Texture2D" uid="uid://bx4ggsvc5xunt" path="res://assets/enemies/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 05.png" id="5_wtq4b"]
+[ext_resource type="Texture2D" uid="uid://dgombkwwik1yc" path="res://assets/enemies/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 06.png" id="6_j0cyh"]
+[ext_resource type="Texture2D" uid="uid://dpwbewky41uqg" path="res://assets/enemies/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 07.png" id="7_g0wcc"]
+[ext_resource type="Texture2D" uid="uid://dmg72q1unge7w" path="res://assets/enemies/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 08.png" id="8_s1ycm"]
+[ext_resource type="Texture2D" uid="uid://dm5or8gfiypcx" path="res://assets/enemies/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 09.png" id="9_shcg2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7p1mj"]
+size = Vector2(29, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8tegq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ipns3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8qclf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w8i8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_otmr2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wtq4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_j0cyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_g0wcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_s1ycm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_shcg2")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=388532868]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2090368709]
+position = Vector2(1.5, -3.5)
+shape = SubResource("RectangleShape2D_7p1mj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2140984397]
+position = Vector2(1.9073486e-06, -4.9999995)
+scale = Vector2(0.6805556, 0.875)
+sprite_frames = SubResource("SpriteFrames_8tegq")
