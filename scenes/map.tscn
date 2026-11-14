@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://c46t8bdc1igra"]
+[gd_scene format=4 uid="uid://dix70hcyex1a2"]
 
 [ext_resource type="Texture2D" uid="uid://d02r8aa3tqxtn" path="res://assets/Free/Terrain/Terrain (16x16).png" id="1_jh32y"]
 [ext_resource type="Texture2D" uid="uid://bdb1otvobwl3" path="res://assets/4.png" id="2_be0no"]
@@ -18,6 +18,7 @@
 [ext_resource type="AudioStream" uid="uid://qlo4vhjfgb44" path="res://sounds/15. Volcanic Crater.ogg" id="14_n1psn"]
 [ext_resource type="Texture2D" uid="uid://8xa62iqhtcf1" path="res://assets/background1.png" id="16_p7tei"]
 [ext_resource type="PackedScene" uid="uid://cqfr0bkw400nu" path="res://scenes/enemy.tscn" id="17_c70he"]
+[ext_resource type="PackedScene" uid="uid://blm1g7ud3rp7y" path="res://scenes/crop_take.tscn" id="19_6k6j1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
 texture = ExtResource("1_jh32y")
@@ -3954,3 +3955,12 @@ position = Vector2(1968, -50)
 
 [node name="Enemy2" parent="." unique_id=334104566 instance=ExtResource("17_c70he")]
 position = Vector2(2132, -53)
+
+[node name="CropTake" parent="." unique_id=166416041 instance=ExtResource("19_6k6j1")]
+position = Vector2(1079, -34)
+
+[node name="CropTake2" parent="." unique_id=126356891 instance=ExtResource("19_6k6j1")]
+position = Vector2(406, -38)
+
+[node name="CropTake3" parent="." unique_id=678518077 instance=ExtResource("19_6k6j1")]
+position = Vector2(1003, -40)
