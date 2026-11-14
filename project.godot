@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Little Kingdom"
-run/main_scene="uid://b5bluxx6ubfhh"
+run/main_scene="uid://dsmpwrepe0tf0"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
