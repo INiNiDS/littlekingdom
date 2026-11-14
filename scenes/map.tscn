@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://dix70hcyex1a2"]
+[gd_scene format=4 uid="uid://bc6wphukw4jd3"]
 
 [ext_resource type="Texture2D" uid="uid://d02r8aa3tqxtn" path="res://assets/Free/Terrain/Terrain (16x16).png" id="1_jh32y"]
 [ext_resource type="Texture2D" uid="uid://bdb1otvobwl3" path="res://assets/4.png" id="2_be0no"]
@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://b5bluxx6ubfhh" path="res://scenes/alpfa_control.tscn" id="8_c00ee"]
 [ext_resource type="Texture2D" uid="uid://byqse8kxg6tm6" path="res://assets/house 4.png" id="8_n1psn"]
 [ext_resource type="Texture2D" uid="uid://cmq6vnw4sef73" path="res://assets/Water.png" id="9_c00ee"]
-[ext_resource type="AudioStream" uid="uid://qlo4vhjfgb44" path="res://sounds/15. Volcanic Crater.ogg" id="14_n1psn"]
+[ext_resource type="Texture2D" uid="uid://8xa62iqhtcf1" path="res://assets/background1.png" id="16_p7tei"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
 texture = ExtResource("1_jh32y")
@@ -3929,7 +3929,16 @@ position = Vector2(336, 56)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1435666660]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1421178427]
-stream = ExtResource("14_n1psn")
-autoplay = true
-bus = &"Music"
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2070983906]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=604209301]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("16_p7tei")
+expand_mode = 1
+stretch_mode = 6
