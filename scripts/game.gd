@@ -36,6 +36,7 @@ func _input(event: InputEvent) -> void:
 				citizen_go_for_player = true
 	elif event.is_action_pressed("ui_spawn") and player.player_crops > 0:
 		player.player_crops -= 1
+		
 		var instance = CROP.instantiate()
 		get_tree().current_scene.add_child(instance)
 		instance.global_position = player.global_position - Vector2(0, 90)

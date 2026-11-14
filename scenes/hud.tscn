@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://crjmj0153o2ug"]
+
+[ext_resource type="Script" uid="uid://djroto2phe4fg" path="res://scripts/hud.gd" id="1_ahhtf"]
+
+[node name="HUD" type="CanvasLayer" unique_id=2121264634]
+script = ExtResource("1_ahhtf")
+
+[node name="Label" type="Label" parent="." unique_id=973514230]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Pshenicha "
