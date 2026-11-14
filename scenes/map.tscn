@@ -13,8 +13,12 @@
 [ext_resource type="Texture2D" uid="uid://bex2vb6xfn5r4" path="res://assets/house 10.png" id="7_c00ee"]
 [ext_resource type="Texture2D" uid="uid://52jrhdtphjy0" path="res://assets/5.png" id="7_n1psn"]
 [ext_resource type="PackedScene" uid="uid://b5bluxx6ubfhh" path="res://scenes/alpfa_control.tscn" id="8_c00ee"]
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://byqse8kxg6tm6" path="res://assets/house 4.png" id="8_n1psn"]
 [ext_resource type="Texture2D" uid="uid://cmq6vnw4sef73" path="res://assets/Water.png" id="9_c00ee"]
+=======
+[ext_resource type="AudioStream" uid="uid://qlo4vhjfgb44" path="res://sounds/15. Volcanic Crater.ogg" id="14_n1psn"]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
 texture = ExtResource("1_jh32y")
@@ -3927,3 +3931,8 @@ tile_set = SubResource("TileSet_bio7f")
 position = Vector2(336, 56)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1435666660]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1421178427]
+stream = ExtResource("14_n1psn")
+autoplay = true
+bus = &"Music"
