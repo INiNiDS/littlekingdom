@@ -7,6 +7,19 @@ const GRAVITY = 980.0
 
 @onready var anim = $AnimatedSprite2D
 
+var max_hp: int = 100
+var hp: int = 100
+
+func take_damage(amount: int):
+	anim.play("hit")
+	hp -= amount
+	hp = max(hp, 0)
+
+	print("HP игрока: ", hp)
+
+	if hp <= 0:
+		print("Игрок проиграл!")
+
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
