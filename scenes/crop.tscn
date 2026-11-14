@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bm15p8fay11fp"]
+
+[ext_resource type="Script" uid="uid://c82grbok4qc67" path="res://scripts/crop.gd" id="1_pl0dt"]
+[ext_resource type="Texture2D" uid="uid://s8he3rekod5f" path="res://assets/crop_start.png" id="2_2dbbp"]
+[ext_resource type="Texture2D" uid="uid://871htcr8i5wi" path="res://assets/crop_polovina.png" id="3_221fb"]
+[ext_resource type="Texture2D" uid="uid://jvhxv83hmo5p" path="res://assets/crop_full.png" id="4_248e2"]
+
+[node name="Crop" type="Node2D" unique_id=1177225275]
+script = ExtResource("1_pl0dt")
+
+[node name="CropStart" type="Sprite2D" parent="." unique_id=1800372329]
+visible = false
+scale = Vector2(10, 10)
+texture = ExtResource("2_2dbbp")
+
+[node name="CropPolovina" type="Sprite2D" parent="." unique_id=1584868590]
+visible = false
+scale = Vector2(10, 10)
+texture = ExtResource("3_221fb")
+
+[node name="Crop" type="Sprite2D" parent="." unique_id=2082830716]
+visible = false
+scale = Vector2(10, 10)
+texture = ExtResource("4_248e2")
+
+[node name="Timer" type="Timer" parent="." unique_id=1663583995]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
