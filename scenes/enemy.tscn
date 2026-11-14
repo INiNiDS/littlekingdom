@@ -127,7 +127,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1f82d"]
-size = Vector2(60, 90.5)
+size = Vector2(206, 77.5)
 
 [node name="Enemy" type="CharacterBody2D" unique_id=388532868]
 script = ExtResource("1_qaulx")
@@ -144,5 +144,5 @@ sprite_frames = SubResource("SpriteFrames_8tegq")
 [node name="Area2D" type="Area2D" parent="." unique_id=1704819786]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1800848794]
-position = Vector2(13, -18.75)
+position = Vector2(15, -12.25)
 shape = SubResource("RectangleShape2D_1f82d")
