@@ -1,11 +1,11 @@
-[gd_scene format=4 uid="uid://cunhs15mtpfa8"]
+[gd_scene format=4 uid="uid://cgpagvyr4vb58"]
 
-[ext_resource type="Texture2D" uid="uid://d02r8aa3tqxtn" path="res://assets/Free/Terrain/Terrain (16x16).png" id="1_con2f"]
-[ext_resource type="Texture2D" uid="uid://b6rgdk3nfookd" path="res://assets/green.png" id="2_mhnvy"]
-[ext_resource type="Texture2D" uid="uid://c8sfobifl01i8" path="res://assets/Free/Menu/Buttons/Settings.png" id="3_4ytvr"]
-[ext_resource type="Texture2D" uid="uid://b84x3ekhsuvye" path="res://assets/Free/colours.png" id="3_g3eks"]
-[ext_resource type="Script" uid="uid://ltj5762amq6b" path="res://scenes/button.gd" id="5_v86rl"]
-[ext_resource type="AudioStream" uid="uid://o04qj3ulp6kr" path="res://sounds/02. Lively City.ogg" id="6_g3eks"]
+[ext_resource type="Texture2D" path="res://assets/Free/Terrain/Terrain (16x16).png" id="1_con2f"]
+[ext_resource type="Texture2D" path="res://assets/green.png" id="2_mhnvy"]
+[ext_resource type="Texture2D" path="res://assets/Free/Menu/Buttons/Settings.png" id="3_4ytvr"]
+[ext_resource type="Texture2D" path="res://assets/Free/colours.png" id="3_g3eks"]
+[ext_resource type="Script" path="res://scenes/button.gd" id="5_v86rl"]
+[ext_resource type="AudioStream" path="res://sounds/02. Lively City.ogg" id="6_g3eks"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g3eks"]
 texture = ExtResource("1_con2f")

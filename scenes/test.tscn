@@ -1,9 +1,9 @@
-[gd_scene format=4 uid="uid://dsmpwrepe0tf0"]
+[gd_scene format=4 uid="uid://prwvmbqhlbte"]
 
-[ext_resource type="Script" uid="uid://b2jchaennxjl3" path="res://scenes/area_2d.gd" id="1_74lek"]
-[ext_resource type="PackedScene" uid="uid://b5bluxx6ubfhh" path="res://scenes/alpfa_control.tscn" id="1_errlg"]
-[ext_resource type="Texture2D" uid="uid://d02r8aa3tqxtn" path="res://assets/Free/Terrain/Terrain (16x16).png" id="2_bl13t"]
-[ext_resource type="PackedScene" uid="uid://cqfr0bkw400nu" path="res://scenes/enemy.tscn" id="3_iyx0m"]
+[ext_resource type="Script" path="res://scenes/area_2d.gd" id="1_74lek"]
+[ext_resource type="PackedScene" path="res://scenes/alpfa_control.tscn" id="1_errlg"]
+[ext_resource type="Texture2D" path="res://assets/Free/Terrain/Terrain (16x16).png" id="2_bl13t"]
+[ext_resource type="PackedScene" uid="uid://dn8w4to1vc7t1" path="res://scenes/enemy.tscn" id="3_iyx0m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iyx0m"]
 texture = ExtResource("2_bl13t")
@@ -316,4 +316,6 @@ tile_map_data = PackedByteArray("AAD///7/AAAGAAAAAAD/////AAAGAAEAAAD//wAAAAAGAAI
 tile_set = SubResource("TileSet_74lek")
 
 [node name="Enemy" parent="Node2D" unique_id=388532868 instance=ExtResource("3_iyx0m")]
+z_index = 0
 position = Vector2(250, 112)
+collision_layer = 1

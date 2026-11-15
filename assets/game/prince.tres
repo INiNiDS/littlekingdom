@@ -1,0 +1,369 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cosxetwh34g4c"]
+
+[ext_resource type="Texture2D" uid="uid://dw6gua3a23g16" path="res://assets/game/prince_default.png" id="tex_1"]
+[ext_resource type="Texture2D" uid="uid://bsmq85fij0rsv" path="res://assets/game/prince_run.png" id="tex_2"]
+[ext_resource type="Texture2D" uid="uid://dpha7yefgb7ko" path="res://assets/game/prince_jump.png" id="tex_3"]
+[ext_resource type="Texture2D" uid="uid://bc5r5w30qn6dd" path="res://assets/game/prince_fall.png" id="tex_4"]
+[ext_resource type="Texture2D" uid="uid://dncro4sdc5mtj" path="res://assets/game/prince_hit.png" id="tex_5"]
+[ext_resource type="Texture2D" uid="uid://clnaivfssxrft" path="res://assets/game/prince_attack.png" id="tex_6"]
+[ext_resource type="Texture2D" uid="uid://06id4d6jgqwy" path="res://assets/game/prince_mine.png" id="tex_mine"]
+
+[sub_resource type="AtlasTexture" id="frame_attack_0"]
+atlas = ExtResource("tex_6")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_attack_1"]
+atlas = ExtResource("tex_6")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_attack_2"]
+atlas = ExtResource("tex_6")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_attack_3"]
+atlas = ExtResource("tex_6")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_attack_4"]
+atlas = ExtResource("tex_6")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_default_0"]
+atlas = ExtResource("tex_1")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_default_1"]
+atlas = ExtResource("tex_1")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_default_2"]
+atlas = ExtResource("tex_1")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_default_3"]
+atlas = ExtResource("tex_1")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_default_4"]
+atlas = ExtResource("tex_1")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_default_5"]
+atlas = ExtResource("tex_1")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_fall_0"]
+atlas = ExtResource("tex_4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_fall_1"]
+atlas = ExtResource("tex_4")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_fall_2"]
+atlas = ExtResource("tex_4")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_fall_3"]
+atlas = ExtResource("tex_4")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_fall_4"]
+atlas = ExtResource("tex_4")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_fall_5"]
+atlas = ExtResource("tex_4")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_fall_6"]
+atlas = ExtResource("tex_4")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_fall_7"]
+atlas = ExtResource("tex_4")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_hit_0"]
+atlas = ExtResource("tex_5")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_hit_1"]
+atlas = ExtResource("tex_5")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_hit_2"]
+atlas = ExtResource("tex_5")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_hit_3"]
+atlas = ExtResource("tex_5")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_hit_4"]
+atlas = ExtResource("tex_5")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_hit_5"]
+atlas = ExtResource("tex_5")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_jump_0"]
+atlas = ExtResource("tex_3")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_jump_1"]
+atlas = ExtResource("tex_3")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_jump_2"]
+atlas = ExtResource("tex_3")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_jump_3"]
+atlas = ExtResource("tex_3")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_jump_4"]
+atlas = ExtResource("tex_3")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_jump_5"]
+atlas = ExtResource("tex_3")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_jump_6"]
+atlas = ExtResource("tex_3")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_mine_0"]
+atlas = ExtResource("tex_mine")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_mine_1"]
+atlas = ExtResource("tex_mine")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_mine_2"]
+atlas = ExtResource("tex_mine")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_mine_3"]
+atlas = ExtResource("tex_mine")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_mine_4"]
+atlas = ExtResource("tex_mine")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_mine_5"]
+atlas = ExtResource("tex_mine")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_mine_6"]
+atlas = ExtResource("tex_mine")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_mine_7"]
+atlas = ExtResource("tex_mine")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_run_0"]
+atlas = ExtResource("tex_2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_run_1"]
+atlas = ExtResource("tex_2")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_run_2"]
+atlas = ExtResource("tex_2")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_run_3"]
+atlas = ExtResource("tex_2")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_run_4"]
+atlas = ExtResource("tex_2")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="frame_run_5"]
+atlas = ExtResource("tex_2")
+region = Rect2(320, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("frame_attack_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_attack_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_attack_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_attack_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_attack_4")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("frame_default_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_default_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_default_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_default_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_default_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_default_5")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("frame_fall_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_fall_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_fall_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_fall_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_fall_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_fall_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_fall_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_fall_7")
+}],
+"loop": 1,
+"name": &"fall",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("frame_hit_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_hit_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_hit_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_hit_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_hit_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_hit_5")
+}],
+"loop": 0,
+"name": &"hit",
+"speed": 13.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("frame_jump_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_jump_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_jump_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_jump_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_jump_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_jump_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_jump_6")
+}],
+"loop": 0,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("frame_mine_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_mine_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_mine_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_mine_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_mine_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_mine_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_mine_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_mine_7")
+}],
+"loop": 0,
+"name": &"mine",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("frame_run_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_run_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_run_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_run_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_run_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("frame_run_5")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 16.0
+}]

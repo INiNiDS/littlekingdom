@@ -1,0 +1,34 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_player_script"]
+[ext_resource type="SpriteFrames" path="res://assets/game/prince.tres" id="2_prince_frames"]
+[ext_resource type="Script" path="res://scripts/CombatFX.gd" id="3_fx"]
+
+[sub_resource type="RectangleShape2D" id="PlayerShape"]
+size = Vector2(17, 35)
+
+[node name="player" type="CharacterBody2D" groups=["player"]]
+z_index = 3
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_player_script")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -18)
+shape = SubResource("PlayerShape")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -31)
+sprite_frames = ExtResource("2_prince_frames")
+animation = &"default"
+scale = Vector2(1.32, 1.32)
+texture_filter = 1
+
+[node name="CombatFX" type="Node2D" parent="."]
+script = ExtResource("3_fx")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(0, -35)
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+position_smoothing_speed = 6.0

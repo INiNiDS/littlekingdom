@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://ook8bmau3pf8"]
+
+[ext_resource type="Script" uid="uid://d3h518ho83086" path="res://scripts/MainMenu.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://l2u3nn4mevve" path="res://assets/night_sky.png" id="2_sky"]
+
+[node name="MainMenu" type="Control" unique_id=1455152997]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Sky" type="TextureRect" parent="." unique_id=802428450]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_sky")
+expand_mode = 1
+stretch_mode = 1
