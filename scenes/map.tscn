@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://dix70hcyex1a2"]
 
 [ext_resource type="Texture2D" uid="uid://d02r8aa3tqxtn" path="res://assets/Free/Terrain/Terrain (16x16).png" id="1_jh32y"]
+[ext_resource type="Script" uid="uid://dl3n6daa4t5ef" path="res://scripts/map.gd" id="1_sq6bu"]
 [ext_resource type="Texture2D" uid="uid://bdb1otvobwl3" path="res://assets/4.png" id="2_be0no"]
 [ext_resource type="Texture2D" uid="uid://bdfcbuiw42wnh" path="res://assets/shop cart.png" id="3_blm8a"]
 [ext_resource type="Texture2D" uid="uid://dkoucgkph11n5" path="res://assets/TX Village Props.png" id="3_mlgqr"]
@@ -18,9 +19,15 @@
 [ext_resource type="AudioStream" uid="uid://qlo4vhjfgb44" path="res://sounds/15. Volcanic Crater.ogg" id="14_n1psn"]
 [ext_resource type="Texture2D" uid="uid://8xa62iqhtcf1" path="res://assets/background1.png" id="16_p7tei"]
 [ext_resource type="PackedScene" uid="uid://cqfr0bkw400nu" path="res://scenes/enemy.tscn" id="17_c70he"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://blm1g7ud3rp7y" path="res://scenes/crop_take.tscn" id="19_6k6j1"]
 [ext_resource type="PackedScene" uid="uid://crjmj0153o2ug" path="res://scenes/hud.tscn" id="18_mo32q"]
 
+=======
+[ext_resource type="PackedScene" uid="uid://crjmj0153o2ug" path="res://scenes/hud.tscn" id="18_mo32q"]
+[ext_resource type="PackedScene" uid="uid://blm1g7ud3rp7y" path="res://scenes/crop_take.tscn" id="19_6k6j1"]
+[ext_resource type="PackedScene" uid="uid://dr2ac4ok52fgv" path="res://scenes/citizen.tscn" id="22_4b7dj"]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
 texture = ExtResource("1_jh32y")
@@ -3923,6 +3930,7 @@ sources/18 = SubResource("TileSetAtlasSource_6k6j1")
 sources/19 = SubResource("TileSetAtlasSource_m335s")
 
 [node name="Game" type="Node2D" unique_id=704632181]
+script = ExtResource("1_sq6bu")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=720013894]
 position = Vector2(798, 1210)
@@ -3952,7 +3960,6 @@ stretch_mode = 6
 stream = ExtResource("14_n1psn")
 autoplay = true
 
-<<<<<<< Updated upstream
 [node name="Enemy" parent="." unique_id=388532868 instance=ExtResource("17_c70he")]
 position = Vector2(1968, -50)
 
@@ -3967,6 +3974,8 @@ position = Vector2(406, -38)
 
 [node name="CropTake3" parent="." unique_id=678518077 instance=ExtResource("19_6k6j1")]
 position = Vector2(1003, -40)
-=======
+
 [node name="HUD" parent="." unique_id=2121264634 instance=ExtResource("18_mo32q")]
->>>>>>> Stashed changes
+
+[node name="Citizen" parent="." unique_id=1418606089 instance=ExtResource("22_4b7dj")]
+position = Vector2(1003, -40)
