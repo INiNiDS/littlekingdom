@@ -47,10 +47,10 @@ script = ExtResource("4_spawner")
 script = ExtResource("3_hud")
 
 [node name="GuardWest" parent="." unique_id=839562590 instance=ExtResource("6_knight")]
-guard_name = "Сэр Эдрик"
+guard_name = "Сэр Азизбек "
 
 [node name="GuardEast" parent="." unique_id=970217096 instance=ExtResource("6_knight")]
-guard_name = "Сэр Роланд"
+guard_name = "Сэр Элшод"
 guard_index = 1
 spawn_cell_x = 16
 
