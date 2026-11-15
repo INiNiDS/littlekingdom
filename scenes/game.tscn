@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://cbwcfo8igrtnp"]
+[gd_scene format=3 uid="uid://blul6qf16o4ku"]
 
 [ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="1_player"]
 [ext_resource type="Script" uid="uid://dfq4y40ok3htk" path="res://scripts/TerrariaWorld.gd" id="2_world"]
-[ext_resource type="Script" uid="uid://cyh1vyc7r75ex" path="res://scripts/HUD.gd" id="3_hud"]
+[ext_resource type="Script" uid="uid://c2ocwcqcgrkl4" path="res://scripts/HUD.gd" id="3_hud"]
 [ext_resource type="Script" uid="uid://cspty6spqh41k" path="res://scripts/EnemySpawner.gd" id="4_spawner"]
 [ext_resource type="PackedScene" path="res://scenes/KnightGuard.tscn" id="6_knight"]
 [ext_resource type="Script" uid="uid://xc3yew8sutnl" path="res://scripts/GameOver.gd" id="7_game_over"]
@@ -46,10 +46,10 @@ script = ExtResource("4_spawner")
 script = ExtResource("3_hud")
 
 [node name="GuardWest" parent="." unique_id=839562590 instance=ExtResource("6_knight")]
-guard_name = "Сэр Эдрик"
+guard_name = "Сэр Азизбек"
 
 [node name="GuardEast" parent="." unique_id=970217096 instance=ExtResource("6_knight")]
-guard_name = "Сэр Роланд"
+guard_name = "Сэр Элшод"
 guard_index = 1
 spawn_cell_x = 16
 
