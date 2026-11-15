@@ -63,7 +63,7 @@ func _button(caption: String, box: VBoxContainer) -> Button:
 
 
 func _start_game() -> void:
-	get_tree().change_scene_to_file("res://scenes/Game.tscn")
+	get_tree().change_scene_to_file("res://scenes/game.tscn")
 
 
 func _quit_game() -> void:
