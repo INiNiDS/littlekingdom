@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cbf1pfxkfn63"]
+[gd_scene format=3 uid="uid://blul6qf16o4ku"]
 
 [ext_resource type="Script" uid="uid://cvabo6ycdowos" path="res://scenes/game.gd" id="1_kiw3p"]
 [ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="1_player"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://cspty6spqh41k" path="res://scripts/EnemySpawner.gd" id="4_spawner"]
 [ext_resource type="PackedScene" path="res://scenes/KnightGuard.tscn" id="6_knight"]
 [ext_resource type="Script" uid="uid://xc3yew8sutnl" path="res://scripts/GameOver.gd" id="7_game_over"]
+[ext_resource type="AudioStream" uid="uid://cym6sk352i65d" path="res://music/03. Royal Castle.ogg" id="8_gee14"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_400sg"]
 load_path = "res://.godot/imported/night_sky.png-ae97fb252de3c3d408ca2ed9f1298ab7.ctex"
@@ -57,3 +58,8 @@ spawn_cell_x = 16
 [node name="GameOver" type="CanvasLayer" parent="." unique_id=390655728]
 layer = 20
 script = ExtResource("7_game_over")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1733635793]
+stream = ExtResource("8_gee14")
+autoplay = true
+bus = &"music"
