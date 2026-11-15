@@ -5,6 +5,7 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 @onready var animation = $AnimatedSprite2D
 @export var player_in_zone = false
+@onready var player = $"../Player"
 var goint_to_seed = false
 var gl_seed_position = Vector2.ZERO
 var citizen_go_for_player_var = false
@@ -14,17 +15,14 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	if citizen_go_for_player_var:
-		print("go here")
 		if abs(player_direction.x) >= 0.52:
 			animation.play("run")
 		else:
 			animation.play("idle")
 
 		if player_direction.x:
-			print("r")
 			velocity.x = player_direction.x * SPEED
 		else:
-			print("e")
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 		if player_direction.x != 0:
@@ -45,7 +43,6 @@ func _physics_process(delta: float) -> void:
 		if direction.x:
 			velocity.x = direction.x * SPEED
 		else:
-			print("e")
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 		if direction.x != 0:
@@ -81,3 +78,6 @@ func dont_go_for_player() -> void:
 
 func going_to_seed() -> bool:
 	return goint_to_seed
+
+func add_pschenicha() -> void:
+	player.add_pschenicha()
