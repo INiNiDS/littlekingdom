@@ -28,4 +28,14 @@ stretch_mode = 1
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=893736483]
 stream = ExtResource("3_2wh52")
 autoplay = true
-bus = &"music"
+
+[node name="Label" type="Label" parent="." unique_id=714985862]
+layout_mode = 0
+offset_right = 174.0
+offset_bottom = 103.0
+text = "A - right
+D - Left
+F - Attack
+E - interat
+LMB - set block
+RMB - destroy block"
