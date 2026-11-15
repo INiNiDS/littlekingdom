@@ -1,9 +1,8 @@
-[gd_scene format=3 uid="uid://blul6qf16o4ku"]
+[gd_scene format=3 uid="uid://cbwcfo8igrtnp"]
 
-[ext_resource type="Script" uid="uid://cvabo6ycdowos" path="res://scenes/game.gd" id="1_kiw3p"]
 [ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="1_player"]
 [ext_resource type="Script" uid="uid://dfq4y40ok3htk" path="res://scripts/TerrariaWorld.gd" id="2_world"]
-[ext_resource type="Script" uid="uid://c2ocwcqcgrkl4" path="res://scripts/HUD.gd" id="3_hud"]
+[ext_resource type="Script" uid="uid://cyh1vyc7r75ex" path="res://scripts/HUD.gd" id="3_hud"]
 [ext_resource type="Script" uid="uid://cspty6spqh41k" path="res://scripts/EnemySpawner.gd" id="4_spawner"]
 [ext_resource type="PackedScene" path="res://scenes/KnightGuard.tscn" id="6_knight"]
 [ext_resource type="Script" uid="uid://xc3yew8sutnl" path="res://scripts/GameOver.gd" id="7_game_over"]
@@ -13,7 +12,6 @@
 load_path = "res://.godot/imported/night_sky.png-ae97fb252de3c3d408ca2ed9f1298ab7.ctex"
 
 [node name="Game" type="Node2D" unique_id=2126486753]
-script = ExtResource("1_kiw3p")
 
 [node name="FixedSky" type="CanvasLayer" parent="." unique_id=1177384004]
 layer = -10
@@ -62,4 +60,3 @@ script = ExtResource("7_game_over")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1733635793]
 stream = ExtResource("9_0tnpc")
 autoplay = true
-bus = &"music"
