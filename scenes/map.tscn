@@ -19,15 +19,9 @@
 [ext_resource type="AudioStream" uid="uid://qlo4vhjfgb44" path="res://sounds/15. Volcanic Crater.ogg" id="14_n1psn"]
 [ext_resource type="Texture2D" uid="uid://8xa62iqhtcf1" path="res://assets/background1.png" id="16_p7tei"]
 [ext_resource type="PackedScene" uid="uid://cqfr0bkw400nu" path="res://scenes/enemy.tscn" id="17_c70he"]
-<<<<<<< Updated upstream
-[ext_resource type="PackedScene" uid="uid://blm1g7ud3rp7y" path="res://scenes/crop_take.tscn" id="19_6k6j1"]
-[ext_resource type="PackedScene" uid="uid://crjmj0153o2ug" path="res://scenes/hud.tscn" id="18_mo32q"]
-
-=======
 [ext_resource type="PackedScene" uid="uid://crjmj0153o2ug" path="res://scenes/hud.tscn" id="18_mo32q"]
 [ext_resource type="PackedScene" uid="uid://blm1g7ud3rp7y" path="res://scenes/crop_take.tscn" id="19_6k6j1"]
 [ext_resource type="PackedScene" uid="uid://dr2ac4ok52fgv" path="res://scenes/citizen.tscn" id="22_4b7dj"]
->>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
 texture = ExtResource("1_jh32y")

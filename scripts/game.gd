@@ -4,7 +4,7 @@ extends Node2D
 @onready var citizen = $Citizen
 @onready var layer = $TileMapLayer
 @onready var crop_take = $CropTake
-
+@onready var hud = $HUD
 
 const CROP = preload("res://scenes/crop.tscn")
 var citizen_go_for_player = false 
@@ -36,7 +36,10 @@ func _input(event: InputEvent) -> void:
 				citizen_go_for_player = true
 	elif event.is_action_pressed("ui_spawn") and player.player_crops > 0:
 		player.player_crops -= 1
+		print("here: " + hud.name)
+		hud.remove_crop()
 		
 		var instance = CROP.instantiate()
 		get_tree().current_scene.add_child(instance)
+		print("pshenicha!")
 		instance.global_position = player.global_position - Vector2(0, 90)
