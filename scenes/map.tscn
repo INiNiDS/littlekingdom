@@ -3952,7 +3952,7 @@ stretch_mode = 6
 stream = ExtResource("14_n1psn")
 autoplay = true
 
-<<<<<<< Updated upstream
+
 [node name="Enemy" parent="." unique_id=388532868 instance=ExtResource("17_c70he")]
 position = Vector2(1968, -50)
 
@@ -3967,6 +3967,6 @@ position = Vector2(406, -38)
 
 [node name="CropTake3" parent="." unique_id=678518077 instance=ExtResource("19_6k6j1")]
 position = Vector2(1003, -40)
-=======
+
 [node name="HUD" parent="." unique_id=2121264634 instance=ExtResource("18_mo32q")]
->>>>>>> Stashed changes
+
