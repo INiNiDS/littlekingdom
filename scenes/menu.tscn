@@ -1,14 +1,8 @@
-[gd_scene format=4 uid="uid://cunhs15mtpfa8"]
+[gd_scene format=4 uid="uid://cgpagvyr4vb58"]
 
-[ext_resource type="Texture2D" uid="uid://d02r8aa3tqxtn" path="res://assets/Free/Terrain/Terrain (16x16).png" id="1_con2f"]
-[ext_resource type="Texture2D" uid="uid://b6rgdk3nfookd" path="res://assets/green.png" id="2_mhnvy"]
-[ext_resource type="Texture2D" uid="uid://c8sfobifl01i8" path="res://assets/Free/Menu/Buttons/Settings.png" id="3_4ytvr"]
-[ext_resource type="Texture2D" uid="uid://b84x3ekhsuvye" path="res://assets/Free/colours.png" id="3_g3eks"]
-[ext_resource type="Script" uid="uid://ltj5762amq6b" path="res://scenes/button.gd" id="5_v86rl"]
-[ext_resource type="AudioStream" uid="uid://o04qj3ulp6kr" path="res://sounds/02. Lively City.ogg" id="6_g3eks"]
+[ext_resource type="AudioStream" uid="uid://cym6sk352i65d" path="res://music/03. Royal Castle.ogg" id="1_yqeox"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g3eks"]
-texture = ExtResource("1_con2f")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -302,7 +296,6 @@ texture = ExtResource("1_con2f")
 18:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v86rl"]
-texture = ExtResource("2_mhnvy")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -3185,7 +3178,6 @@ texture = ExtResource("2_mhnvy")
 71:39/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_13sgg"]
-texture = ExtResource("3_g3eks")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -6111,7 +6103,6 @@ theme_override_colors/font_color = Color(0.9641829, 0.8895903, 0.2123374, 1)
 theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_gc083")
 text = "PLAY"
-script = ExtResource("5_v86rl")
 
 [node name="Settings2" type="Button" parent="." unique_id=1083514823]
 offset_left = 2230.0
@@ -6123,12 +6114,11 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_jwo76")
 [node name="Settings" type="Sprite2D" parent="." unique_id=372637620]
 position = Vector2(2256.5, -348)
 scale = Vector2(2.7142785, 2.4545465)
-texture = ExtResource("3_4ytvr")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1057213137]
-stream = ExtResource("6_g3eks")
+stream = ExtResource("1_yqeox")
 autoplay = true
-bus = &"Music"
+bus = &"music"
 
 [connection signal="pressed" from="TileMapLayer/Exit" to="Button" method="_on_exit_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

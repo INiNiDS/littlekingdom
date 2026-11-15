@@ -1,148 +1,39 @@
-[gd_scene format=3 uid="uid://cqfr0bkw400nu"]
+[gd_scene format=3 uid="uid://dn8w4to1vc7t1"]
 
-[ext_resource type="Script" uid="uid://by8vcgdgq0gif" path="res://scripts/enemy.gd" id="1_qaulx"]
-[ext_resource type="Texture2D" uid="uid://cqwtugki0pxl0" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 01.png" id="2_2pwtc"]
-[ext_resource type="Texture2D" uid="uid://bobc836x2sn6o" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 02.png" id="3_rogs8"]
-[ext_resource type="Texture2D" uid="uid://sbl24vqmw1ff" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 03.png" id="4_wrm80"]
-[ext_resource type="Texture2D" uid="uid://dfi0fff3vbt27" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 04.png" id="5_6awcb"]
-[ext_resource type="Texture2D" uid="uid://x8oal4rbn3pn" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="6_wjec0"]
-[ext_resource type="Texture2D" uid="uid://b4angy5sdkrja" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="7_i4rgx"]
-[ext_resource type="Texture2D" uid="uid://ddlwfbi43ouig" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="8_2mchx"]
-[ext_resource type="Texture2D" uid="uid://dn3lxtexpvwng" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="9_t3vcr"]
-[ext_resource type="Texture2D" uid="uid://e5oqhj4qo5br" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 05.png" id="10_qaulx"]
-[ext_resource type="Texture2D" uid="uid://dii8yd0sxmdtm" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/04-Fall/Fall 01.png" id="11_1f82d"]
-[ext_resource type="Texture2D" uid="uid://dlwv7rtebkf1h" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 01.png" id="12_lioqc"]
-[ext_resource type="Texture2D" uid="uid://dnex5137ackw5" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 02.png" id="13_0lg75"]
-[ext_resource type="Texture2D" uid="uid://0nqnr5bpkibo" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 03.png" id="14_lsnsy"]
-[ext_resource type="Texture2D" uid="uid://wl7ji36h2r7b" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 01.png" id="15_thsr5"]
-[ext_resource type="Texture2D" uid="uid://d0kloeipippy5" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 02.png" id="16_ekh6n"]
-[ext_resource type="Texture2D" uid="uid://2jj5qg5ce7n5" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 03.png" id="17_2sbpf"]
-[ext_resource type="Texture2D" uid="uid://uc4g4m6byfsy" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 04.png" id="18_78kod"]
-[ext_resource type="Texture2D" uid="uid://c6k2dtaw2ssn0" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 05.png" id="19_605iw"]
-[ext_resource type="Texture2D" uid="uid://ciptaxbjvhwef" path="res://assets/enemies/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 06.png" id="20_x6q4o"]
+[ext_resource type="Script" uid="uid://b66lbx3vr7g53" path="res://scripts/enemy.gd" id="1_enemy"]
+[ext_resource type="SpriteFrames" uid="uid://r6c2covisiom" path="res://assets/game/skeleton.tres" id="2_skeleton"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7p1mj"]
-size = Vector2(46, 78)
+[sub_resource type="RectangleShape2D" id="EnemyShape"]
+size = Vector2(28, 44)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_8tegq"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_2pwtc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_rogs8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_wrm80")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_6awcb")
-}],
-"loop": 1,
-"name": &"attack",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_wjec0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_i4rgx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_2mchx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_t3vcr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_qaulx")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 12.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("11_1f82d")
-}],
-"loop": 1,
-"name": &"fell",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_2pwtc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_rogs8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_wrm80")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_6awcb")
-}],
-"loop": 1,
-"name": &"hit",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("12_lioqc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_0lg75")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_lsnsy")
-}],
-"loop": 1,
-"name": &"jump",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("15_thsr5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_ekh6n")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_2sbpf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_78kod")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_605iw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_x6q4o")
-}],
-"loop": 1,
-"name": &"run",
-"speed": 10.0
-}]
+[sub_resource type="StyleBoxFlat" id="EnemyBarBg"]
+bg_color = Color(0.1, 0.1, 0.12, 0.9)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1f82d"]
-size = Vector2(206, 77.5)
+[sub_resource type="StyleBoxFlat" id="EnemyBarFill"]
+bg_color = Color(0.78, 0.24, 0.31, 1)
 
-[node name="Enemy" type="CharacterBody2D" unique_id=388532868]
-script = ExtResource("1_qaulx")
+[node name="Enemy" type="CharacterBody2D" unique_id=1167952705 groups=["enemies"]]
+z_index = 2
+collision_layer = 4
+script = ExtResource("1_enemy")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2090368709]
-position = Vector2(12, -13)
-shape = SubResource("RectangleShape2D_7p1mj")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=948874029]
+position = Vector2(0, -20)
+shape = SubResource("EnemyShape")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2140984397]
-position = Vector2(13, -13)
-scale = Vector2(2.114, 3.07)
-sprite_frames = SubResource("SpriteFrames_8tegq")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1670272267]
+texture_filter = 1
+position = Vector2(0, -23)
+scale = Vector2(1.1, 1.1)
+sprite_frames = ExtResource("2_skeleton")
+animation = &"default"
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1704819786]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1800848794]
-position = Vector2(15, -12.25)
-shape = SubResource("RectangleShape2D_1f82d")
+[node name="HealthBar" type="ProgressBar" parent="."]
+visible = false
+offset_left = -23.0
+offset_top = -59.0
+offset_right = 23.0
+offset_bottom = -51.0
+theme_override_styles/background = SubResource("EnemyBarBg")
+theme_override_styles/fill = SubResource("EnemyBarFill")
+show_percentage = false

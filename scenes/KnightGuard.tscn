@@ -1,0 +1,69 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/KnightGuard.gd" id="1_script"]
+[ext_resource type="SpriteFrames" path="res://assets/game/knight.tres" id="2_frames"]
+
+[sub_resource type="RectangleShape2D" id="Shape2D"]
+size = Vector2(21, 47)
+
+[sub_resource type="StyleBoxFlat" id="HealthBackground"]
+bg_color = Color(0.13, 0.11, 0.15, 0.92)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.62, 0.56, 0.42, 1)
+
+[sub_resource type="StyleBoxFlat" id="HealthFill"]
+bg_color = Color(0.29, 0.74, 0.56, 1)
+
+[node name="KnightGuard" type="CharacterBody2D" groups=["guards"]]
+z_index = 4
+collision_layer = 8
+collision_mask = 1
+script = ExtResource("1_script")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -23.5)
+shape = SubResource("Shape2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -57)
+scale = Vector2(1.42, 1.42)
+sprite_frames = ExtResource("2_frames")
+animation = &"idle"
+
+[node name="NameLabel" type="Label" parent="."]
+offset_left = -46.0
+offset_top = -84.0
+offset_right = 46.0
+offset_bottom = -67.0
+theme_override_font_sizes/font_size = 10
+horizontal_alignment = 1
+text = "Страж"
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = -26.0
+offset_top = -66.0
+offset_right = 26.0
+offset_bottom = -57.0
+theme_override_styles/background = SubResource("HealthBackground")
+theme_override_styles/fill = SubResource("HealthFill")
+max_value = 85.0
+value = 85.0
+show_percentage = false
+
+[node name="Hint" type="Label" parent="."]
+visible = false
+offset_left = -55.0
+offset_top = -111.0
+offset_right = 55.0
+offset_bottom = -85.0
+theme_override_colors/font_color = Color(1, 0.88, 0.5, 1)
+theme_override_colors/font_shadow_color = Color(0.06, 0.03, 0.02, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+text = "E — Нанять"

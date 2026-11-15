@@ -1,0 +1,126 @@
+# Little Kingdom — static validation
+
+[OK] folder assets
+[OK] folder assets/game
+[OK] folder scripts
+[OK] folder scenes
+[OK] file project.godot
+[OK] file scenes/Game.tscn
+[OK] file scenes/MainMenu.tscn
+[OK] file scenes/Player.tscn
+[OK] file scripts/TerrariaWorld.gd
+[OK] file scripts/player.gd
+[OK] file assets/game/prince.tres
+[OK] file assets/game/prince_mine.png
+[OK] Player.tscn -> res://scripts/player.gd
+[OK] Player.tscn -> res://assets/game/prince.tres
+[OK] Player.tscn -> res://scripts/CombatFX.gd
+[OK] alpfa_control.tscn -> res://scripts/player.gd
+[OK] alpfa_control.tscn -> res://assets/game/prince.tres
+[OK] alpfa_control.tscn -> res://scripts/CombatFX.gd
+[OK] Enemy.tscn -> res://scripts/enemy.gd
+[OK] Enemy.tscn -> res://assets/game/skeleton.tres
+[OK] MainMenu.tscn -> res://scripts/MainMenu.gd
+[OK] MainMenu.tscn -> res://assets/night_sky.png
+[OK] KnightGuard.tscn -> res://scripts/KnightGuard.gd
+[OK] KnightGuard.tscn -> res://assets/game/knight.tres
+[OK] Game.tscn -> res://scenes/Player.tscn
+[OK] Game.tscn -> res://scripts/TerrariaWorld.gd
+[OK] Game.tscn -> res://scripts/HUD.gd
+[OK] Game.tscn -> res://scripts/EnemySpawner.gd
+[OK] Game.tscn -> res://assets/night_sky.png
+[OK] Game.tscn -> res://scenes/KnightGuard.tscn
+[OK] Game.tscn -> res://scripts/GameOver.gd
+[OK] eye.tres -> res://assets/game/eye_default.png
+[OK] eye.tres -> res://assets/game/eye_run.png
+[OK] eye.tres -> res://assets/game/eye_attack.png
+[OK] eye.tres -> res://assets/game/eye_hit.png
+[OK] eye.tres -> res://assets/game/eye_death.png
+[OK] skeleton.tres -> res://assets/game/skeleton_default.png
+[OK] skeleton.tres -> res://assets/game/skeleton_run.png
+[OK] skeleton.tres -> res://assets/game/skeleton_attack.png
+[OK] skeleton.tres -> res://assets/game/skeleton_hit.png
+[OK] skeleton.tres -> res://assets/game/skeleton_death.png
+[OK] prince.tres -> res://assets/game/prince_default.png
+[OK] prince.tres -> res://assets/game/prince_run.png
+[OK] prince.tres -> res://assets/game/prince_jump.png
+[OK] prince.tres -> res://assets/game/prince_fall.png
+[OK] prince.tres -> res://assets/game/prince_hit.png
+[OK] prince.tres -> res://assets/game/prince_attack.png
+[OK] prince.tres -> res://assets/game/prince_mine.png
+[OK] knight.tres -> res://assets/game/knight/_Idle.png
+[OK] knight.tres -> res://assets/game/knight/_Run.png
+[OK] knight.tres -> res://assets/game/knight/_Jump.png
+[OK] knight.tres -> res://assets/game/knight/_Fall.png
+[OK] knight.tres -> res://assets/game/knight/_JumpFallInbetween.png
+[OK] knight.tres -> res://assets/game/knight/_Attack.png
+[OK] knight.tres -> res://assets/game/knight/_Attack2.png
+[OK] knight.tres -> res://assets/game/knight/_AttackCombo.png
+[OK] knight.tres -> res://assets/game/knight/_AttackNoMovement.png
+[OK] knight.tres -> res://assets/game/knight/_Attack2NoMovement.png
+[OK] knight.tres -> res://assets/game/knight/_AttackComboNoMovement.png
+[OK] knight.tres -> res://assets/game/knight/_Hit.png
+[OK] knight.tres -> res://assets/game/knight/_Death.png
+[OK] knight.tres -> res://assets/game/knight/_DeathNoMovement.png
+[OK] knight.tres -> res://assets/game/knight/_Dash.png
+[OK] knight.tres -> res://assets/game/knight/_Roll.png
+[OK] knight.tres -> res://assets/game/knight/_Slide.png
+[OK] knight.tres -> res://assets/game/knight/_SlideAll.png
+[OK] knight.tres -> res://assets/game/knight/_SlideTransitionStart.png
+[OK] knight.tres -> res://assets/game/knight/_SlideTransitionEnd.png
+[OK] knight.tres -> res://assets/game/knight/_Crouch.png
+[OK] knight.tres -> res://assets/game/knight/_CrouchAll.png
+[OK] knight.tres -> res://assets/game/knight/_CrouchAttack.png
+[OK] knight.tres -> res://assets/game/knight/_CrouchTransition.png
+[OK] knight.tres -> res://assets/game/knight/_CrouchWalk.png
+[OK] knight.tres -> res://assets/game/knight/_TurnAround.png
+[OK] knight.tres -> res://assets/game/knight/_WallClimb.png
+[OK] knight.tres -> res://assets/game/knight/_WallClimbNoMovement.png
+[OK] knight.tres -> res://assets/game/knight/_WallHang.png
+[OK] knight.tres -> res://assets/game/knight/_WallSlide.png
+[OK] no duplicate functions HUD.gd
+[OK] extends directive HUD.gd
+[OK] no duplicate functions KnightGuard.gd
+[OK] extends directive KnightGuard.gd
+[OK] no duplicate functions CombatFX.gd
+[OK] extends directive CombatFX.gd
+[OK] no duplicate functions TerrariaWorld.gd
+[OK] extends directive TerrariaWorld.gd
+[OK] no duplicate functions GameOver.gd
+[OK] extends directive GameOver.gd
+[OK] no duplicate functions player.gd
+[OK] extends directive player.gd
+[OK] no duplicate functions EnemySpawner.gd
+[OK] extends directive EnemySpawner.gd
+[OK] no duplicate functions MainMenu.gd
+[OK] extends directive MainMenu.gd
+[OK] no duplicate functions enemy.gd
+[OK] extends directive enemy.gd
+[OK] house generation in World
+[OK] houses in natural tile lookup
+[OK] no trees over houses
+[OK] mining controls/impact
+[OK] mouse click wired to mining
+[OK] hold to mine
+[OK] mining dust FX
+[OK] mining frame 0 wired
+[OK] mining frame 1 wired
+[OK] mining frame 2 wired
+[OK] mining frame 3 wired
+[OK] mining frame 4 wired
+[OK] mining frame 5 wired
+[OK] mining frame 6 wired
+[OK] mining frame 7 wired
+[OK] mine animation in SpriteFrames
+[OK] 8 mining AtlasTexture subresources
+[OK] one resource block
+[OK] mining texture declared
+[OK] mining sprite sheet 8x64
+[OK] mining sprite transparency
+[OK] save path remains user://
+[OK] PNG valid assets/dark_fantasy_atlas.png
+[OK] PNG valid assets/game/prince_default.png
+[OK] PNG valid assets/game/prince_mine.png
+
+Result: 121 passed, 0 failed.
+This is a static file/resource check; Godot executable is not present, so no actual engine runtime test was performed.

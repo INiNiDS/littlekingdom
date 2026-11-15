@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://ook8bmau3pf8"]
+
+[ext_resource type="Script" uid="uid://d3h518ho83086" path="res://scripts/MainMenu.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://dwna54e1oenbs" path="res://assets/night_sky.png" id="2_sky"]
+[ext_resource type="AudioStream" uid="uid://blbop187dbti" path="res://music/04. Peaceful Village.ogg" id="3_2wh52"]
+
+[node name="MainMenu" type="Control" unique_id=1455152997]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Sky" type="TextureRect" parent="." unique_id=802428450]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_sky")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=893736483]
+stream = ExtResource("3_2wh52")
+autoplay = true
+
+[node name="Label" type="Label" parent="." unique_id=714985862]
+layout_mode = 0
+offset_right = 174.0
+offset_bottom = 103.0
+text = "A - right
+D - Left
+F - Attack
+E - interat
+LMB - set block
+RMB - destroy block"

@@ -1,0 +1,8 @@
+LITTLE KINGDOM / STATIC VALIDATION
+Files: 2716
+Resource paths checked: 71
+Knight: 30 animations, 149 frames
+Input actions: attack (F), interact (E)
+Problems found: 0
+
+NOTE: Static verification only. Godot engine not installed, no live run performed.

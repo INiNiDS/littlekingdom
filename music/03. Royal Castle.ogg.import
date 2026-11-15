@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cym6sk352i65d"
+path="res://.godot/imported/03. Royal Castle.ogg-0a7a9d68c282c197451178a9c6308b36.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/03. Royal Castle.ogg"
+dest_files=["res://.godot/imported/03. Royal Castle.ogg-0a7a9d68c282c197451178a9c6308b36.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
