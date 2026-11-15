@@ -18,9 +18,6 @@
 [ext_resource type="Texture2D" uid="uid://cmq6vnw4sef73" path="res://assets/Water.png" id="9_c00ee"]
 [ext_resource type="Texture2D" uid="uid://8xa62iqhtcf1" path="res://assets/background1.png" id="16_p7tei"]
 [ext_resource type="PackedScene" uid="uid://cqfr0bkw400nu" path="res://scenes/enemy.tscn" id="17_c70he"]
-[ext_resource type="PackedScene" uid="uid://blm1g7ud3rp7y" path="res://scenes/crop_take.tscn" id="19_6k6j1"]
-[ext_resource type="PackedScene" uid="uid://crjmj0153o2ug" path="res://scenes/hud.tscn" id="18_mo32q"]
-
 [ext_resource type="PackedScene" uid="uid://crjmj0153o2ug" path="res://scenes/hud.tscn" id="18_mo32q"]
 [ext_resource type="PackedScene" uid="uid://blm1g7ud3rp7y" path="res://scenes/crop_take.tscn" id="19_6k6j1"]
 [ext_resource type="PackedScene" uid="uid://dr2ac4ok52fgv" path="res://scenes/citizen.tscn" id="22_4b7dj"]

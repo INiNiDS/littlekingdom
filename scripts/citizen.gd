@@ -29,7 +29,7 @@ func _physics_process(delta: float) -> void:
 			animation.flip_h = player_direction.x < 0
 		else:
 			animation.flip_h = player_direction.x < 0
-		if player_direction.y <= 0.4:
+		if player_direction.y <= 0.4 and is_on_floor():
 			velocity.y = JUMP_VELOCITY
 	elif goint_to_seed:
 		var direction = (gl_seed_position - position).normalized()

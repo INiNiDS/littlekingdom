@@ -7,6 +7,7 @@ const GRAVITY = 980.0
 var pshenicha = 0
 var player_crops = 0
 @onready var anim = $AnimatedSprite2D
+@onready var hud = $"../HUD"
 
 var max_hp: int = 100
 var hp: int = 100
@@ -58,9 +59,11 @@ func _physics_process(delta: float) -> void:
 
 func take() -> void:
 	player_crops += 1
+	hud.add_crop()
 	
 func add_pshenicha() -> void:
 	pshenicha += 1
+	hud.add_pshenicha()
 
 func get_pshenicha() -> int:
 	return pshenicha
