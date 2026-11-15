@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://cqqwa00cec6up"]
+[gd_scene format=4 uid="uid://by4xx8ll4m1bi"]
 
 [ext_resource type="Texture2D" uid="uid://d02r8aa3tqxtn" path="res://assets/Free/Terrain/Terrain (16x16).png" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://b5bluxx6ubfhh" path="res://scenes/alpfa_control.tscn" id="2_yqjtg"]
@@ -360,6 +360,7 @@ position = Vector2(134, 345)
 
 [node name="Citizen" parent="." unique_id=1418606089 instance=ExtResource("3_lnu2h")]
 position = Vector2(193, 252)
+script = null
 
 [node name="CropTake" parent="." unique_id=166416041 instance=ExtResource("5_iywne")]
 position = Vector2(636, 299)
